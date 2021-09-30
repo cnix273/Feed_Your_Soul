@@ -5,9 +5,30 @@ div.newPostContainer{
     display:block;
     /* height:50em; */
     width:80%;
-    padding:1em;
+    padding:3em;
     margin:3em;
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     /* transform: rotate(-6deg); */
     transition: transform .15s linear;
+}
+
+select{
+    margin-left: 20px;
+    height: 2.5em;
+    width: 6em;
+}
+
+option{
+    text-indent: 5px!important;
+}
+
+input{
+    margin-left: 20px;
+    width: 90%;
+}
+
+#date{
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-bottom: 30px!important;
 }
