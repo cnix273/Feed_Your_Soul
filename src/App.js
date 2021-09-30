@@ -9,6 +9,8 @@ import {
 import Home from "./components/Home"
 import About from "./components/About"
 import Dashboard from "./components/Dashboard";
+import NewNote from "./components/NewNote";
+import ViewNote from "./components/ViewNote";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -53,6 +55,12 @@ export default function App() {
           </Route>
           <Route path="/dashboard">
             <Dashboard />
+          </Route>
+          <Route path="/newpost">
+              <NewNote />
+          </Route>
+          <Route path="/viewpostit">
+              <ViewNote />
           </Route>
         </Switch>
       </div>
