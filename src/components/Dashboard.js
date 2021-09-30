@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 import Grid from '@material-ui/core/Grid';
 
@@ -11,9 +12,10 @@ export default class Dashboard extends Component {
 
     constructor(props) {
 		super(props);
+
 		this.state = {
             date: "Wednesday, September 22, 2021",
-			emotion: "happy",
+			emotion: this.props.emotionalState,
 			physicalState: "rested",
             link: ""
 		};
@@ -82,7 +84,6 @@ export default class Dashboard extends Component {
                         <Grid item sm={5} md={3} lg={2} className="grid-card">
                             <div className="hello">
                                 <Link to="/newpost">
-                                    
                                         <h4>It's a beautiful day to check in with yourself!</h4>
                                         <h6><TodaysDate/></h6>
                                         <h6>Today's POST-IT</h6>
